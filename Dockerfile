@@ -1,11 +1,13 @@
 # базовый образ Python
-FROM python:3.9.0-slim
+FROM python:3.10.0-slim
 
 # Устанавливаем рабочую директорию внутри контейнера
 WORKDIR /app
 
 # Копируем всю текущую директорию в контейнер
 COPY . .
+
+RUN apt update && apt install -y build-essential gcc
 
 # Устанавливаем зависимости из файла requirements.txt
 RUN pip install -r requirements.txt

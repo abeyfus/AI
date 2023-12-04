@@ -55,7 +55,7 @@
             margin: 0 auto;
             width: 100%;
             max-width: 1000px;
-            height: 50vh;
+            height: 80vh;
             border-radius: 16px;
             -webkit-box-shadow: 0.8rem 0.8rem 1.4rem var(--greyLight-2), -0.2rem -0.2rem 1.8rem var(--white);
             box-shadow: 0.8rem 0.8rem 1.4rem var(--greyLight-2), -0.2rem -0.2rem 1.8rem var(--white);
@@ -363,7 +363,7 @@
 <script>
     "use strict";
     // Подключение к серверу Socket.IO
-    let socket = io.connect('http://localhost:5111');
+    let socket = io.connect('http://127.0.0.1:5111');
     let loader = document.getElementById('loader');
 
     // Функция для добавления сообщения в область сообщений
